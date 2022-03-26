@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="style.css">
+    <title>ToDo App</title>
+</head>
+<body>
+    <div id="top">TO-DO LIST</div>
+    
+ <main>
+        <div id="container">
+          <header>
+            <h2 id="date"></h2>
+            <p id="task-count"></p>
+            <div id="input">
+              <input type="text" name="task" class="form-control" placeholder="Add a new Task..." value="" autocomplete="off">
+              <button class="add-btn">Add Task</button>
+            </div>
+          </header>
+          <section id="list"></section>
+        </div>
+      </main>
+      <script src="./action.js"></script>
+</body>
+</html>

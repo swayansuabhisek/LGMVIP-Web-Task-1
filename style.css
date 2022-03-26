@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  color: #000000bd;
+}
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(30deg, #f1f50c, #5915c7, #d80c0c) fixed;
+}
+
+#top{
+  font-size: 80px;
+  color: #0dffcb;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+}
+
+input,
+textarea,
+button {
+  background: transparent;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+main {
+  display: flex;
+  width: 500px;
+  max-height: 70%;
+  padding: 0 20px;
+}
+#container {
+  width: 100%;
+  position: relative;
+  display: grid;
+  background: #ffffff;
+  box-shadow: 0 10px 80px #0000003d;
+  border-radius: 2rem;
+  overflow-y: hidden;
+}
+header {
+  padding: 20px 20px 10px 20px;
+  border-bottom: 1px solid #00000050;
+}
+#input {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr auto;
+  margin: 20px 0 0 0;
+}
+#input .form-control {
+  width: 100%;
+}
+#input .add-btn {
+  padding: 5px 15px;
+  background: #eb5f5f;
+  color: #ffffff;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: medium;
+}
+#input .add-btn:hover{
+  background-color: #424141;
+}
+#list {
+  overflow-y: auto;
+  display: grid;
+  margin: 0 5px 0 0;
+}
+#list::-webkit-scrollbar {
+  width: 8px;
+}
+#list::-webkit-scrollbar-button {
+  height: 5px;
+}
+#list::-webkit-scrollbar-thumb {
+  background: #0000003d;
+  border-radius: 2rem;
+}
+.cards .cards-info .time {
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #bbbdc750;
+}
+.cards-info {
+  overflow-x: hidden;
+}
+.cards-info .task {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cards.resolved {
+  background: #b7ddf33d;
+}
+.cards.resolved .cards-info {
+  opacity: 0.5;
+}
+.cards.resolved .cards-info .task {
+  text-decoration: line-through;
+}
+.cards .resolved-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #bbbdc7;
+  color: #00000000;
+  cursor: pointer;
+}
+.cards .resolved-btn.active {
+  background: #ffffff;
+  color: #2600ff;
+  border-color: #030303;
+}
+.cards .delete-btn {
+  visibility: hidden;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #e75978;
+  color: #e75978;
+  cursor: pointer;
+}
+.cards:hover {
+  background: #0e1ac023;
+}
+.cards:hover .delete-btn {
+  visibility: visible;
+}
